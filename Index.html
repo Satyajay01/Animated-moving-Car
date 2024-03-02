@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .roading1 {
+            height: 300px;
+            width: 410vh;
+            position: absolute;
+            left: 0;
+            top: 605px;
+            animation-name: roading1;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes roading1 {
+            0% {
+
+                margin-left: -1800px;
+            }
+
+            100% {
+
+                margin-left: 0px;
+            }
+        }
+
+        .car {
+            position: absolute;
+            top: 500px;
+            left: 650px;
+
+            animation-name: car;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes car {
+            0% {
+
+                position: absolute;
+                top: 500px;
+                left: 650px;
+            }
+
+            25% {
+
+                position: absolute;
+                top: 510px;
+                left: 650px;
+            }
+            100%{
+                position: absolute;
+                top: 500px;
+                left: 650px;
+            }
+            
+        }
+
+
+
+        .wheel1 {
+            position: absolute;
+            top: 655px;
+            left: 700px;
+
+
+        }
+
+        .wheel2 {
+            position: absolute;
+            top: 655px;
+            left: 1070px;
+
+        }
+
+        .wheel {
+            height: 128px;
+            width: 150px;
+
+
+            animation-name: wheel;
+            animation-iteration-count: infinite;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+
+        }
+
+
+
+        @keyframes wheel {
+            0% {
+                transform: rotate(0deg);
+
+
+            }
+
+            100% {
+                transform: rotate(-365deg);
+
+            }
+
+        }
+
+        .city {
+            width: 100vw;
+            position: absolute;
+            top: 200px;
+        }
+
+        .cloud {
+            position: absolute;
+            left: 1300px;
+            height: 300px;
+            width: 500px;
+
+
+            animation-name: cloud;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+        }
+
+        .cloud2 {
+            position: absolute;
+            left: -400px;
+            height: 300px;
+            width: 500px;
+
+
+            animation-name: cloud;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+            animation-delay: 8s;
+
+        }
+
+        @keyframes cloud {
+            0% {
+                position: absolute;
+                left: -400px;
+
+            }
+
+            100% {
+                position: absolute;
+                left: 1920px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <img class="cloud" src="cloud-removebg-preview.png" alt="">
+    <img class="cloud2" src="cloud-removebg-preview.png" alt="">
+    <img class="city" src="city-removebg-preview.png" alt="">
+    <img class="roading1" src="road-removebg-preview.png" alt="">
+    <!-- <img class="roading2" src="road-removebg-preview.png" alt=""> -->
+    <img class="car" src="car2-removebg-preview.png" alt="">
+    <img class="wheel1 wheel" src="wheel-removebg-preview.png" alt="">
+    <img class="wheel2 wheel" src="wheel-removebg-preview.png" alt="">
+
+
+
+</body>
+
+</html>
